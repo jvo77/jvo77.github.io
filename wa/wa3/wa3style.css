@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 15px;
+    background-color: lightgrey;
+  }
+  body {
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  #introPictures {
+    border: solid;
+    background-color: lightgrey;
+    position:absolute;
+    right: 50px;
+  }
+  nav {
+    border: solid;
+    background-color: lightgrey;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: absolute;
+    left: 100px;
+  }
+  #introduction {
+    padding-top: 50px;
+
+  }
+
+  .img-with-text {
+    text-align: center;
+    width:[width of img];
+    border: solid;
+    background-color: white;
+    position:absolute;
+    right: 50px;
+    overflow: auto;
+    font-size: small;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+    overflow: auto;
+}
