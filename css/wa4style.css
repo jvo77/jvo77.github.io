@@ -25,17 +25,16 @@ body {
   }
   p{
     margin: 0;
-    font-size: 1.5em;
-    line-height: 1.25em;
+    padding: 1em;
   }
 
   h2{
     margin: 0;
     font-size: 2em;
-    background-color: transparent black;
   }
   
   .card header {
+    background-color: red;
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
     height: 3em;
@@ -46,7 +45,9 @@ body {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
     border-radius: 0 0 1.5em 1.5em;
     height: 3em;
-    padding: 1em;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2.5em;
     background-color: transparent black;
   }
   
@@ -55,5 +56,90 @@ body {
     height: 12em;
     float: right;
     background-color: rgba(0,0,0,0.5);
+  }
+
+  article{
+    height:12em;
+    background-color: rgba(0,0,0,0.25);
+    color: white;
+    box-sizing: border-box;
+    line-height: 1.4em;
+  }
+
+  #footer{
+    font-size: 1.5em;
+  }
+
+
+
+  body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+  }
+  
+  /* Selectors to be matched up with rulesets */
+  
+  /* Rulesets to be matched up with selectors */
+  
+  .mycard {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: purple;
+    border: 0.2em solid darkblue;
+    border-radius: 1.5em;
+  }
+  p{
+    margin: 0;
+    padding: 1em;
+  }
+
+  h2{
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .mycard header {
+    background-color: purple;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+    height: 3em;
+    padding: 1em;
+    color:bisque;
+  }
+  
+  .mycard footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+    height: 3em;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2.5em;
+    background-color: transparent black;
+    color: bisque;
+  }
+  
+  .mycard article img{
+    max-height: 100%;
+    height: 12em;
+    float: right;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  article{
+    height:12em;
+    background-color: rgba(0,0,0,0.25);
+    color: white;
+    box-sizing: border-box;
+    line-height: 1.4em;
+  }
+
+  #myfooter{
+    font-size: 1.5em;
   }
   
