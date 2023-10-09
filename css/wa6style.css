@@ -1,0 +1,19 @@
+
+  
+  #overlay {
+    width: 200vw;
+    height: 100vh;
+    background: url('../img/scoreboard.jpg') no-repeat, url('../img/mobBoxing.jpg') no-repeat;
+  }
+
+  #logo {
+    position: absolute;
+    bottom: 15mm;
+    right: 1mm;
+    width: 35vw;
+    height: 35px;
+    background: url('../img/minelogo.png') no-repeat;
+    background-size: 50%;
+  }
+  
+  /* Your CSS below here */
