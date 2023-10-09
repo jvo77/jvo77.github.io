@@ -1,19 +1,30 @@
 
+body {
+  margin: auto;
+  background: #ccc;
+  width: 83.4vw;
+  height: 97.5vh;
+  border: 3mm solid red;
   
+}
   #overlay {
-    width: 200vw;
+    width: 100vw;
     height: 100vh;
-    background: url('../img/scoreboard.jpg') no-repeat, url('../img/mobBoxing.jpg') no-repeat;
+    background: url('../img/scoreboard.jpg') no-repeat top left , url('../img/mobBoxing.jpg') no-repeat;
   }
 
   #logo {
     position: absolute;
-    bottom: 15mm;
-    right: 1mm;
-    width: 35vw;
-    height: 35px;
+    bottom: 20mm;
+    right: 70mm;
+    width: 20vw;
+    height: 55px;
     background: url('../img/minelogo.png') no-repeat;
-    background-size: 50%;
+    border: 1mm solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 4px;
+    background-size: contain;
   }
   
   /* Your CSS below here */
