@@ -1,0 +1,131 @@
+@media screen and (min-width: 400px){
+    .background{
+        background: url(/img/symphony.jpg) no-repeat;
+        background-size: cover;
+        width: 100vw; 
+        height: 100vh; 
+        margin: 0;
+        opacity: 0.09;
+        position: fixed; 
+        left: 0;
+    }
+    body {
+        color: black;
+        background-color: beige;
+        margin: 0;
+        font: 1.2em / 1.2 times, Helvetica, sans-serif;
+        
+    }
+    .title {
+        font-size: 250%;
+        padding: 20px;
+        margin: .5em;
+        max-width: 100vw;
+        background-color: darkolivegreen;
+        text-align: center;
+        border: 2.5mm double darkslategray;
+        color:white;
+        
+    }
+    .intro{
+        text-align: center;
+        color:black;
+        padding: 30px;
+        margin: .8em;
+        background-color: blanchedalmond;
+        border: 2mm double darkslategrey;
+        display:flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 400px;
+        float: left;
+        margin: 0.7em;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 80vw;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+       
+    }
+    h3{
+        background-color: darkolivegreen;
+        border: 1mm solid darkslategray;
+        color: white;
+    }
+    boxes{
+        background-color:blanchedalmond;  
+        border: 1.5mm solid darkslategray; 
+        padding: 20px;
+    }
+    
+    
+  @media screen and (max-width:1500px){
+    .background{
+        background: url(/img/symphony.jpg) no-repeat;
+        background-size: cover;
+        width: 100vw; 
+        height: 100vh; 
+        margin: 0;
+        opacity: 0.09;
+        position: fixed; 
+        left: 0;
+    }
+    body {
+        color: black;
+        background-color: beige;
+        margin: 0;
+        font: 1.2em / 1.2 times, Helvetica, sans-serif;
+        
+    }
+    .title {
+        font-size: 250%;
+        padding: 20px;
+        margin: .5em;
+        max-width: 100vw;
+        background-color: darkolivegreen;
+        text-align: center;
+        border: 2.5mm double darkslategray;
+        color:white;
+        
+    }
+    .intro{
+        text-align: center;
+        color:black;
+        padding: 30px;
+        margin: .8em;
+        background-color: blanchedalmond;
+        border: 2mm double darkslategrey;
+        text-align: center;
+    }
+    .image {
+        
+        max-width: 100%;
+        margin: auto ;
+
+
+    }
+    .text {
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 80vw;
+       
+    }
+    h3{
+        background-color: darkolivegreen;
+        border: 1mm solid darkslategray;
+        color: white;
+    }
+    boxes{
+        background-color:blanchedalmond;  
+        border: 1.5mm solid darkslategray; 
+        padding: 20px;
+        
+    }
+  }
+}
