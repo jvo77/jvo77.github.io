@@ -34,15 +34,12 @@
         margin: .8em;
         background-color: blanchedalmond;
         border: 2mm double darkslategrey;
-        display:flex;
-        flex-direction: column;
+        display:wrap;
     }
     .image {
         width: 400px;
         float: left;
         margin: 0.7em;
-        display: flex;
-        flex-direction: column;
     }
     .text {
         margin: 0 auto;
