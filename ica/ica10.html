@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">DON'T Press me</button>
+    <h3 id="heading"></h3>
+
+    <script>
+        const button = document.querySelector("#button");
+        const heading = document.querySelector("#heading");
+
+        button.onclick = () => {
+        const reason = prompt("What is your name");
+        alert(`You, ${reason}, you are now cursed!`);
+        heading.textContent = `You suck ${name}`;
+        };
+
+    </script>
+</body>
+</html>
