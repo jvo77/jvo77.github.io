@@ -1,24 +1,36 @@
 body {
     font-family: helvetica, sans-serif;
-    width: 350px;
+    width: 700px;
+    margin: auto;
+    background-color:antiquewhite;
+    border: 3mm groove grey;
+    padding: 40px;
   }
 
   label {
     font-weight: bold;
+    font-size: larger;
+    padding: 20px;
+
   }
 
   div {
-    padding-bottom: 20px;
+    
+    padding: 10px;
+    text-align: center;
   }
 
   input[type="text"] {
     padding: 5px;
     width: 150px;
+    border: 1.5mm double darkslategray;
   }
 
   p {
-    background: #ffc125;
-    color: #5e2612;
-    padding: 10px;
+    background:cadetblue;
+    color: white;
+    padding: 30px;
     visibility: hidden;
+    font-size: 150%;
+    border: 2mm double beige;
   }
