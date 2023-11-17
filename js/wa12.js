@@ -4,13 +4,12 @@ const questionTxt = document.querySelector('#js-quote-text');
 
 async function getQuote() {
     try{
-        const joke = await fetch('https://icanhazdadjoke.com/');
-        // const joke = fetch('https://icanhazdadjoke.com/',{
-        //     headers: {
-        //         "Accept": "application/json"
-        //     }
-        // })
-        const result = await joke.json();
+        const joke = fetch('https://icanhazdadjoke.com/',{
+            headers: {
+                "Accept": "application/json"
+            }
+        })
+        const result = await joke.text();
         console.log(result);
     }
     catch(err) {
