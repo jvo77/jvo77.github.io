@@ -12,8 +12,9 @@ async function getQuote() {
         const result = await joke.json();
         displayQuote(result);
         displayQuote(result['joke']);
-        changeColor('yellow');
-        
+
+        let color = myFunc();
+        changeColor(color);
 
     }
     catch(err) {
@@ -30,7 +31,8 @@ function changeColor(color) {
 }
 
 function myFunc() {
-    changeColor('yellow');
+    let colorChange = ['cadetblue', 'khaki', 'seagreen','pink'];
+    return colorChange[Math.floor(Math.random() * 4)];
 } 
 
 
