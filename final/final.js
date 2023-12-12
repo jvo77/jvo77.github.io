@@ -1,3 +1,4 @@
+const phoneNumberDisplay= document.querySelector('#number');
 $(document).ready(function(){
   
   var ball = {};
@@ -21,11 +22,12 @@ $(document).ready(function(){
     console.log(answer);
   };
 
-  ball.randomPhoneNumber = function()
+  function display()
   {
     var phoneNumber = Math.floor(100000000 + Math.random() * 900000000);
+
+    phoneNumberDisplay.textContent = phoneNumber;
     console.log(phoneNumber);
-    $("#phoneNumber").text(phoneNumber);
   }
 
   var onClick = function()
@@ -33,7 +35,7 @@ $(document).ready(function(){
     $("#answer").hide();
     ball.getAnswer();
 
-    ball.randomPhoneNumber();
+    ball.display();
   };
   
   $("#revealButton").click( onClick );
