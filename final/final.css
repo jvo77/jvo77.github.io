@@ -20,26 +20,31 @@ html {
   padding: 0px;
   font-size: 16px;
   color: darkslategray;
-  background-color: #f8f8f8;
+  background-color: peachpuff;
+  background: url(../img/gradient.jpg) no-repeat center center fixed;
+  background-size: cover;
+  
 }
 
 header {
   text-align: center;
+  color:beige;
 }
 
 .answer {
+  font-family: "Helvetica Neue", sans-serif;
   color: darkslategray;
   margin: 0;
   position: absolute;
   top: 40%;
   left: 45%;
   width: 11%;
-  font-size: 120%;
+  font-size: 130%;
 }
 
 .phoneNumber {
   font-family: "Helvetica Neue", sans-serif;
-  color: black;
+  color: beige;
   position: absolute;
   top: 8%;
   left: 45%;

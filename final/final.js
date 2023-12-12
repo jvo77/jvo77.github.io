@@ -21,7 +21,7 @@ $(document).ready(function(){
     $("#8ball").attr("src", "/img/8ballAnswer.png");
 
     console.log(answer);
-    if (answer == ("I guess so", "Yup, it is", "Yes, definitely", "Yes, duh", "Probably", "Yes", "I think so"))
+    if (answer.includes('I guess so'))
     {
       console.log("YAY");
     }
