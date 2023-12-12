@@ -5,8 +5,9 @@ $(document).ready(function(){
   var ball = {};
   
   ball.listofanswers = ["I guess so", "Yup, it is", "Yes, definitely", "Yes, duh", "Probably", "Yes", "I think so", "Try again", "Ask again", "Not sure", "Cannot think, retry", "Maybe ask again", "No", "Hmmm No", "NO", "I don't know, retry"];
- 
+  
   $("#answer").hide();
+  display();
 
   ball.getAnswer = function()
   {
@@ -20,6 +21,10 @@ $(document).ready(function(){
     $("#8ball").attr("src", "/img/8ballAnswer.png");
 
     console.log(answer);
+    if (answer == ("I guess so", "Yup, it is", "Yes, definitely", "Yes, duh", "Probably", "Yes", "I think so"))
+    {
+      console.log("YAY");
+    }
   };
 
   function display()
