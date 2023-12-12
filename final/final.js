@@ -1,4 +1,5 @@
 const phoneNumberDisplay= document.querySelector('#number');
+
 $(document).ready(function(){
   
   var ball = {};
@@ -18,14 +19,12 @@ $(document).ready(function(){
     $("#8ball").effect( "shake");
     $("#8ball").attr("src", "/img/8ballAnswer.png");
 
-    console.log(question);
     console.log(answer);
   };
 
   function display()
   {
-    var phoneNumber = Math.floor(100000000 + Math.random() * 900000000);
-
+    var phoneNumber = Math.floor(Math.random() * 1000000000);
     phoneNumberDisplay.textContent = phoneNumber;
     console.log(phoneNumber);
   }
@@ -34,8 +33,7 @@ $(document).ready(function(){
   {
     $("#answer").hide();
     ball.getAnswer();
-
-    ball.display();
+    console.log(display());
   };
   
   $("#revealButton").click( onClick );
