@@ -51,7 +51,7 @@ img {
   .title-word-2 {
     --color-1: #084814;
     --color-2: #725833;
-    --color-3: #E4A9A8;
+    --color-3: #be8d8c;
   }
   
   @keyframes color-animation {
@@ -68,9 +68,9 @@ img {
   
   .myName {
     display: grid;
-    place-items: center;  
+    place-items: left;  
     text-align: center;
-    height: 100vh
+    height: 50vh;
     
   }
   
