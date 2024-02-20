@@ -77,7 +77,7 @@ img {
   .title {
     font-weight: 800;
     font-size: 3em;
-    font-family: "Yeseva One", cursive;
+    font-family: "Verdana", cursive;
     text-transform: uppercase;
     text-align: left;
   }
@@ -158,7 +158,7 @@ img {
   @media (prefers-color-scheme: dark) {
     body {
       background-color: #e7e7e7;
-      font-family: "JetBrains Mono", monospace;
+      font-family: "Optima", sans-serif;
       line-height: 1.45;
       color: var(--charcoal);
     }
@@ -422,7 +422,7 @@ img {
   @media (prefers-color-scheme: light) {
     body {
       background-color: var(--light);
-      font-family: "JetBrains Mono", monospace;
+      font-family: "Optima", sans-serif;
       line-height: 1.45;
       color: #000;
     }
@@ -939,7 +939,7 @@ img {
     margin-top: 1em;
     text-align: left;
     font-size: 2.3em;
-    font-family: "Yeseva One", cursive;
+    font-family: "Verdana", cursive;
     color: #7b8d7c;
     margin-bottom: 0.2em;
     text-transform: lowercase;
