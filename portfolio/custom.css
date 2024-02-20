@@ -158,7 +158,7 @@ img {
   @media (prefers-color-scheme: dark) {
     body {
       background-color: #e7e7e7;
-      font-family: "Optima", sans-serif;
+      font-family: Georgia, serif;
       line-height: 1.45;
       color: var(--charcoal);
     }
@@ -422,7 +422,7 @@ img {
   @media (prefers-color-scheme: light) {
     body {
       background-color: var(--light);
-      font-family: "Optima", sans-serif;
+      font-family: Georgia, serif;
       line-height: 1.45;
       color: #000;
     }
@@ -939,7 +939,7 @@ img {
     margin-top: 1em;
     text-align: left;
     font-size: 2.3em;
-    font-family: "Verdana", cursive;
+    font-family: "Yeseva One", cursive;
     color: #7b8d7c;
     margin-bottom: 0.2em;
     text-transform: lowercase;
