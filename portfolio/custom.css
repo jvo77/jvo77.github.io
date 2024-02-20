@@ -63,51 +63,6 @@ img {
     text-transform: lowercase;
   }
   
-  .typewriter h2{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #B7C4CF; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-      typing 6s steps(37, end),
-      blink-caret 1s step-end 10s;
-    /* margin-top: .5em; */
-    text-align: left;
-    font-size: 1.7em;
-    font-family: "Yeseva One", cursive;
-    color: #000;
-    margin-bottom: 1.5em;
-    text-transform: lowercase;
-  }
-  
-  .typewriter h3{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #B7C4CF; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-      typing 6s steps(37, end),
-      blink-caret 1s step-end 10s;
-    /* margin-top: .5em; */
-    text-align: left;
-    font-size: 1.7em;
-    color: #000;
-    margin-bottom: 1.5em;
-    text-transform: lowercase;
-  }
-  
-  .typewriter h4{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #B7C4CF; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-      typing 6s steps(37, end),
-      blink-caret 1s step-end 10s;
-    /* margin-top: .5em; */
-    text-align: left;
-    font-family: "JetBrains Mono", monospace;;
-  }
   
   /* The typing effect */
   @keyframes typing {
