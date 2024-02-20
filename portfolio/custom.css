@@ -44,14 +44,14 @@ img {
   
   .title-word-1 {
     --color-1: #54813e;
-    --color-2: #bb8a4a;
+    --color-2: #DBAD4A;
     --color-3: #E4A9A8;
   }
   
   .title-word-2 {
     --color-1: #084814;
     --color-2: #725833;
-    --color-3: #DBAD4A;
+    --color-3: #8a4464;
   }
   
   @keyframes color-animation {
