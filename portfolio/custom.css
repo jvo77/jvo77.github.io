@@ -34,47 +34,56 @@ img {
     text-transform: uppercase;
     font-size: 1.75em;
   }
-  /* .project-img{
-    margin: 2%;
-    width:46%;
-    padding:2%;
-    position: relative; 
-    left: 50%;
-    transform: translateX(-80%);
-    text-align: center; 
-  } */
   
+
+
   
-  /* DEMO-SPECIFIC STYLES */
-  .typewriter h1{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #B7C4CF; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-      typing 5s steps(40, end),
-      blink-caret 1s step-end 10s;
-    /* margin-top: .5em; */
-    text-align: left;
-    font-size: 2.5em;
+
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #54813e;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .myName {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100vh
+    
+  }
+  
+  .title {
+    font-weight: 800;
+    font-size: 3em;
     font-family: "Yeseva One", cursive;
-    color: #B7C4CF;
-    /* margin-bottom: 0.05em; */
-    text-transform: lowercase;
+    text-transform: uppercase;
+    text-align: left;
   }
-  
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #B7C4CF }
-  }
+
+
   
   .pinkimg {
     position: relative;
