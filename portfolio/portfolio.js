@@ -1,60 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var navToggle = document.querySelector('.mobile-toggle')
-    var bodyClasses = document.querySelector('body').classList
-    if (navToggle) {
-      navToggle.addEventListener('click', function () {
-        var body = document.querySelector('body')
-        body.classList.toggle('nav-open')
-      })
-    }
-    if (bodyClasses.contains('work')) {
-      doWork()
-    }
-  })
+document.addEventListener("DOMContentLoaded", () => {
+    // Smooth scrolling for navigation
+    const links = document.querySelectorAll("nav a");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var navToggle = document.querySelector('.mobile-toggle2')
-    var bodyClasses = document.querySelector('body').classList
-    if (navToggle) {
-      navToggle.addEventListener('click', function () {
-        var body = document.querySelector('body')
-        body.classList.toggle('nav-open')
-      })
+    for (const link of links) {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+        });
     }
-    if (bodyClasses.contains('work')) {
-      doWork()
-    }
-  })
-  
-  doWork = function () {
-    var work = document.querySelectorAll('.four.columns')
-    var workSort = document.querySelector('.work-sort')
-    var workToggles = workSort.children
-    for (var i = 0; i < workToggles.length; i++) {
-      workToggles[i].addEventListener('click', function (e) {
-        e.preventDefault()
-        for (var i = 0; i < workToggles.length; i++) {
-          workToggles[i].classList.remove('active')
-        }
-        this.classList.add('active')
-        var category = this.getAttribute('data-category')
-        doSort(category, work)
-      })
-    }
-  }
-  
-  doSort = function (cat, work) {
-    for (var i = 0; i < work.length; i++) {
-      if (cat == "all") {
-        work[i].classList.remove('filtered')
-  
-      } else {
-        if (work[i].classList.contains(cat)) {
-          work[i].classList.remove('filtered')
-        } else {
-          work[i].classList.add('filtered')
-        }
-      }
-  
-    }
-  }
+
+    // Project filter
+    const filterButtons = document.querySelectorAll("#project-filter button");
+    const projects = document.querySelectorAll(".project");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+            projects.forEach(project => {
+                if (filter === "all" || project.getAttribute("data-category") === filter) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            });
+        });
+    });
+    
+
+    // Modal functionality
+    const modal = document.getElementById("modal");
+    const modalContent = document.getElementById("modal-description");
+    const closeButton = document.querySelector(".close-button");
+    const detailsButtons = document.querySelectorAll(".details-button");
+
+    detailsButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const projectId = button.getAttribute("data-project");
+            const project = document.querySelector(`.project[data-category][data-project='${
+
+            };
+
+            
