@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (const link of links) {
         link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute("href").substring(1);
-            document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+            const targetId = link.getAttribute("href");
+            if (targetId.startsWith("#")) {
+                e.preventDefault();
+                const targetElementId = targetId.substring(1);
+                document.getElementById(targetElementId).scrollIntoView({ behavior: "smooth" });
+            }
         });
     }
 
@@ -26,7 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-    
+
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 750,
+            delay: (el, i) => 50 * i
+        }).add({
+            targets: '.ml6',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
 
     // Modal functionality
     const modal = document.getElementById("modal");
@@ -37,8 +58,24 @@ document.addEventListener("DOMContentLoaded", () => {
     detailsButtons.forEach(button => {
         button.addEventListener("click", () => {
             const projectId = button.getAttribute("data-project");
-            const project = document.querySelector(`.project[data-category][data-project='${
-
-            };
-
+            const project = document.querySelector(`.project[data-category][data-project='${projectId}']`);
             
+            if (project) {
+                modalContent.innerHTML = project.innerHTML;
+                modal.style.display = "block";
+            } else {
+                console.error("Project not found:", projectId);
+            }
+        });
+    });
+
+    closeButton.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
