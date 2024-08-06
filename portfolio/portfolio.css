@@ -84,10 +84,10 @@ body {
   margin-bottom: 30px;
 }
 
-.main-content{
+/* .main-content{
    
   background-image: radial-gradient(rgba(246, 237, 164, 0.518), rgba(243, 217, 121, 0.578), rgba(235, 194, 143, 0.567), rgba(241, 192, 132, 0.578));
-}
+} */
 .main-content h1 {
   margin-left: 335px;
   padding-top: 3%;
@@ -231,10 +231,52 @@ div.gallery .item:hover img {
   color: var(--primary-clr);
 }
 
+/* blob */
+
+.blob {
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  aspect-ratio: 1/1;
+  animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+    alternate forwards;
+  filter: blur(40px);
+  z-index: -1;
+  background: linear-gradient(
+    47deg,
+    rgb(212, 112, 194) 21%,
+    #e4e087 67%,
+    rgb(203, 161, 119) 81%
+  );
+
+  /*  Optional  */
+    box-shadow: inset 50px 50px 17px 0px #ad647a,
+    inset 100px 100px 17px 0px #cd9e58;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(65%, 59%);
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 80%;
+  }
+  50% {
+    transform: translate(0%, 40%);
+    border-radius: 20% 71% 47% 70% / 81% 35% 32% 54%;
+    rotate: 41deg;
+    scale: 1.15;
+  }
+  100% {
+    transform: translate(-60%, -35%);
+    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+    rotate: -60deg;
+    scale: 1.15;
+  }
+}
+
 /* Project Pages */
 
 .projects-container {
-  margin-left: 335px;
+  margin-left: 340px;
   margin-right: 100px;
 }
 
@@ -365,6 +407,115 @@ div.scroll-container1 li{
 div.scroll-container1 img {
   padding: 10px;
   width: 70vw;
+  height: 80vh;
+}
+
+/* cup */
+
+div.scroll-container4 {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 71vw;
+  height: 85vh;
+  margin-bottom: 30px;
+}
+
+div.scroll-container4 li{
+  width: 68vw;
+  height: 60vh;
+}
+
+div.scroll-container4 img {
+  padding: 10px;
+  width: 30vw;
+  height: 80vh;
+}
+
+/* lamp */
+
+div.scroll-container5 {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 71vw;
+  height: 85vh;
+  margin-bottom: 30px;
+}
+
+div.scroll-container5 li{
+  width: 68vw;
+  height: 60vh;
+}
+
+div.scroll-container5 img {
+  padding: 10px;
+  width: 30vw;
+  height: 80vh;
+}
+.scroll-container5 .photo {
+  padding: 10px;
+  width: 50vw;
+  height: 80vh;
+}
+
+/* pants */
+
+div.scroll-container6 {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 71vw;
+  height: 85vh;
+  margin-bottom: 30px;
+}
+
+div.scroll-container6 li {
+  width: 68vw;
+  height: 60vh;
+}
+
+div.scroll-container6 img {
+  padding: 10px;
+  width: 35vw;
+  height: 80vh;
+}
+
+.scroll-container6 .photo {
+  padding: 10px;
+  width: 55vw;
+  height: 80vh;
+}
+
+/* mario */
+
+div.scroll-container7 {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 68vw;
+  height: 85vh;
+  margin-bottom: 30px;
+}
+
+div.scroll-container7 li{
+  width: 68vw;
+  height: 60vh;
+}
+
+div.scroll-container7 img {
+  padding: 10px;
+  width: 60vw;
+  height: 80vh;
+}
+
+.scroll-container7 .photo {
+  padding: 10px;
+  width: 80vw;
   height: 80vh;
 }
 
