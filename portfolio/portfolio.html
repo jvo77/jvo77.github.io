@@ -14,9 +14,27 @@
 <body>
     <style>
         body {
-            background: linear-gradient(55deg, #b26276a3 0%, #cdae708b 51%, #bead985d 85%);
+            background: linear-gradient(55deg, #4c7aeea3 0%, #cdae708b 51%, #bead985d 85%);
+            /* background: linear-gradient(55deg, #b26276a3 0%, #cdae708b 51%, #bead985d 85%); */
             height: 3000px;
         }
+        .blob {
+            position: fixed; /* Change to fixed */
+            opacity: 0.5;
+            width: 400px;
+            aspect-ratio: 1/1;
+            animation: animate 20s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+            filter: blur(40px);
+            z-index: -1; /* Ensure the blob is behind other content */
+            background: linear-gradient(
+                47deg,
+                rgba(111, 152, 224, 0.64) 21%,
+                #75af6687 67%,
+                rgba(206, 210, 124, 0.823) 81%
+  );
+  /* box-shadow: inset 50px 50px 17px 0px #ad647a,
+    inset 100px 100px 17px 0px #cd9e58; */
+}
     </style>
     <div class="blob"></div>
     <div class="sidebar">
@@ -36,11 +54,17 @@
         <section id="about" class="section">
             <div class="container">
                 <img src="jess.JPG" alt="Photo of me" class="me-img">
+                <div class="resume-button">
+                    <a href="resume.pdf" download>
+                        <button>Download Resume</button>
+                    </a>
+                </div>
                 <h1 class="ml6">
                     <span class="text-wrapper">
                       <span class="letters">Hello! I'm Jessica Vo</span>
                     </span>
                 </h1>  
+                
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
                 <img id="leaves-img"
                 src="fish.png"
@@ -61,12 +85,14 @@
             </div>
         </section>
         <section id="education">
+            <div class="edu">
             <h2>Education</h2>
             <div class="divider"></div>
             <h3>2022-2025 | University of Colorado Boulder</h3>
             <p>BS-Creative Technology and Design</p>
             <h3>2021-2022 | Community College of Aurora</h3>
             <p>Associates of Arts</p>
+            </div>
         </section>
     
         <section id="course">
@@ -74,39 +100,39 @@
             <div class="divider"></div>
             <div class="sections">
                 <div class="sec1">
-                    <h3>Intro to Programming: C++</h3>
+                    <h3>Intro to Programming C++</h3>
                     <p>Fall 2022</p>
                 </div>
-                <div class="sec2">
+                <div class="sec1">
                     <h3>Engineering Projects</h3>
                     <p>Fall 2022</p>
                 </div>
-                <div class="sec3">
+                <div class="sec1">
                     <h3>Data Structures</h3>
                     <p>Summer 2023</p>
                 </div>
-                <div class="sec4">
+                <div class="sec1">
                     <h3>Design Foundations</h3>
                     <p>Fall 2023</p>
                 </div>
-                <div class="sec5">
+                <div class="sec">
                     <h3>Web</h3>
                     <p>Fall 2023</p>
                 </div>
-                <div class="sec6">
+                <div class="sec">
                     <h3>Text</h3>
                     <p>Spring 2024</p>
                 </div>
-                <div class="sec7">
+                <div class="sec">
                     <h3>Object</h3>
                     <p>Spring 2024</p>
                 </div>
-                <div class="sec8">
+                <div class="sec">
                     <h3>Form</h3>
                     <p>Spring 2024</p>
                 </div>
           </section>
-          
+
     </div>
     <script src="portfolio.js"></script>
 

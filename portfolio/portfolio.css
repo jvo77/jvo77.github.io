@@ -10,8 +10,10 @@ body {
 }
 
 .container{
+  position: relative;
   overflow: visible;
   width:100%;
+  display:contents;
 }
 
 .container h1{
@@ -20,7 +22,7 @@ font-family: "Shrikhand", serif;
   font-style: normal;
   text-shadow: 2px 2px 4px #cdbd88ae;
   font-size: 50px;
-  color:rgb(46, 93, 50);
+  color:rgb(74, 101, 76);
 }
 
 .container p{
@@ -39,7 +41,13 @@ font-family: "Shrikhand", serif;
   font-weight: 800;
   color:rgba(60, 40, 4, 0.595);
   margin-left: 367px;
-  margin-top: -20px;
+  margin-top: -22px;
+}
+
+#about p{
+  margin-top: -10px;
+  padding-bottom: 35px;
+  width: 522px;
 }
 
 .container .divider{
@@ -68,11 +76,12 @@ font-family: "Shrikhand", serif;
 #education h3{
   font-family: "Poppins", sans-serif;
   text-shadow: 2px 2px 2px #cdbd88ae;
-  font-weight: 450;
+  font-weight: 550;
   font-style: normal;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 367px;
   margin-top: 10px;
+  color:rgba(38, 26, 4, 0.958);
 }
 
 #education p{
@@ -83,6 +92,11 @@ font-family: "Shrikhand", serif;
   font-size: 13.5px;
   margin-top: -20px;
   margin-left: 348px;
+  margin-bottom: -10px;
+}
+
+#education .edu{
+  padding-bottom: 35px;
 }
 
 #education .divider{
@@ -90,6 +104,19 @@ font-family: "Shrikhand", serif;
   width: 35%;
   margin-left: 354px;
   margin-top: 2px;
+}
+
+#course .sections{
+  column-count: 2;
+  column-width: 0px;
+  column-gap: 0px;
+  padding-bottom: 35px;
+}
+
+#course .sec{
+  position: relative;
+  margin-left: -200px;
+  padding-top: .1px;
 }
 
 #course h2{
@@ -105,11 +132,13 @@ font-family: "Shrikhand", serif;
 #course h3{
   font-family: "Poppins", sans-serif;
   text-shadow: 2px 2px 2px #cdbd88ae;
-  font-weight: 450;
+  font-weight:550;
   font-style: normal;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 367px;
   margin-top: 10px;
+  color:rgba(38, 26, 4, 0.958);
+  width:200px;
 }
 
 #course p{
@@ -120,22 +149,39 @@ font-family: "Shrikhand", serif;
   font-size: 13.5px;
   margin-top: -20px;
   padding-left: 18px;
+  width:200px;
+  padding-bottom: 10px;
 }
-
-
-#course .sections{
-  column-count: 2;
-  column-width: 10px;
-  column-gap: -600px;
-}
-
 
 #course .divider{
   border-top: 2px dotted #518ecec0;
-  width: 70%;
+  width: 35%;
   margin-left: 354px;
   margin-top: 2px;
 }
+
+.resume-button{
+  position: absolute;
+  margin-top: 1000px;
+  bottom:20px;
+}
+
+.resume-button button {
+  background-color: #518ece; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button button:hover {
+  background-color: #3a6fb1; /* Hover state */
+}
+
 
 .sidebar {
   z-index: 2;
@@ -169,10 +215,10 @@ font-family: "Shrikhand", serif;
 
 .me-img {
   float: right;
-  width: 350px;
+  width: 400px;
   margin-right: 100px;
-  margin-top: 50px;
-  border-radius: 5%;
+  margin-top: 70px;
+  border-radius: 1%;
   border: 2px solid #555;
 }
 
