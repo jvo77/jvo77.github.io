@@ -9,19 +9,132 @@ body {
   font-size: 18px;
 }
 
+.container{
+  overflow: visible;
+  width:100%;
+}
+
 .container h1{
+font-family: "Shrikhand", serif;
   font-weight: 400;
   font-style: normal;
-  font-family: "Titan One", sans-serif;
+  text-shadow: 2px 2px 4px #cdbd88ae;
   font-size: 50px;
   color:rgb(46, 93, 50);
 }
 
 .container p{
   font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 2px #cdbd88ae;
   font-weight: 450;
   font-style: normal;
   font-size: 13.5px;
+}
+
+#about h2{
+  text-shadow: 2px 2px 4px #a1773357;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  color:rgba(60, 40, 4, 0.595);
+  margin-left: 367px;
+  margin-top: -20px;
+}
+
+.container .divider{
+  border-top: 2px dotted #518ecec0;
+  width: 35%;
+  margin-left: 354px;
+  margin-top: 2px;
+}
+
+#education {
+  display: block;
+  visibility: visible;
+  width:100%;
+}
+
+#education h2{
+  text-shadow: 2px 2px 4px #a1773357;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  margin-left: 367px;
+  color:rgba(60, 40, 4, 0.595);
+}
+
+#education h3{
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 2px #cdbd88ae;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 367px;
+  margin-top: 10px;
+}
+
+#education p{
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 2px #cdbd88ae;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 13.5px;
+  margin-top: -20px;
+  margin-left: 348px;
+}
+
+#education .divider{
+  border-top: 2px dotted #518ecec0;
+  width: 35%;
+  margin-left: 354px;
+  margin-top: 2px;
+}
+
+#course h2{
+  text-shadow: 2px 2px 4px #a1773357;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  margin-left: 367px;
+  color:rgba(60, 40, 4, 0.595);
+}
+
+#course h3{
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 2px #cdbd88ae;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 367px;
+  margin-top: 10px;
+}
+
+#course p{
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 2px #cdbd88ae;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 13.5px;
+  margin-top: -20px;
+  padding-left: 18px;
+}
+
+
+#course .sections{
+  column-count: 2;
+  column-width: 10px;
+  column-gap: -600px;
+}
+
+
+#course .divider{
+  border-top: 2px dotted #518ecec0;
+  width: 70%;
+  margin-left: 354px;
+  margin-top: 2px;
 }
 
 .sidebar {
@@ -38,6 +151,13 @@ body {
   font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: 600;
+}
+
+#leaves-img{
+  width:25%;
+  margin-top: -270px;
+  margin-left: 340px;
+  margin-bottom: -100px;
 }
 
 .profile-img {
@@ -129,8 +249,10 @@ body {
 }
 
 .section-head h1 {
-  font-family: "Titan One", sans-serif;
-  font-weight: 100;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 4px #cdbd88ae;
   position: relative;
   font-size: 32px;
   margin: 10px 0px 30px;
@@ -289,12 +411,14 @@ div.gallery .item:hover img {
 
 .projects-container h2{
   font-family: "Crimson Pro", serif;
+  text-shadow: 2px 2px 4px #cdbd88ae;
   font-optical-sizing: auto;
   font-weight: 600;
 }
 
 .projects-container p{
   font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 4px #cdbd88ae;
   font-weight: 450;
   font-style: normal;
   font-size:small;
@@ -305,8 +429,9 @@ div.gallery .item:hover img {
 }
 
 .projects-content h1 {
-  font-family: "Titan One", sans-serif;
-  font-weight: 100;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 2%;
   font-size: 40px;
 }
