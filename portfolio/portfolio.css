@@ -730,8 +730,8 @@ div.scroll-container7 img {
   text-shadow: 2px 2px 4px #d1c49bae;
   font-size: 55px;
   margin-left: 490px;
-  margin-top: 30px;
-  margin-bottom: -150px;
+  margin-top: 70px;
+  margin-bottom: -180px;
   color:#654c31;
 }
 
@@ -739,7 +739,7 @@ div.scroll-container7 img {
   margin-top: 260px;
   list-style: none;
   padding: 0;
-  margin-left:1000px;
+  margin-left: 350px;
 }
 
 .contact-list li {
@@ -753,21 +753,34 @@ div.scroll-container7 img {
 }
 
 .contact-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
   
 }
 
 .contact-list a {
   text-decoration: none;
-  color:rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px #473d1ebc;
-  font-size: 20px;
+  color:#644f3a;
+  text-shadow: 2px 2px 4px #ab996ebc;
+  font-size: 22px;
 }
 
 .contact-list a:hover {
   text-decoration: underline;
+}
+
+.description{
+  font-family: "Crimson Pro", serif;
+  font-weight: 1000;
+  margin-left: 1185px;
+  color:#eae7e4;
+  text-shadow: 2px 2px 4px #8e7b4dbc;
+  text-align: center;
+  width: 250px;
+  font-size: 30px;
+  position: relative;
+  bottom: 40%;
 }
 
 /* name */
